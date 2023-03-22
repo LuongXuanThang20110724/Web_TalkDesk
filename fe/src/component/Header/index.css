@@ -1,0 +1,136 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 5px;
+    overflow: hidden;
+    margin-left: -80px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    cursor: pointer;
+    padding: 30px 0;
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 14px;
+    position: relative;
+}
+
+.navbar li::before {
+    content: "";
+    display: block;
+    transform: translateY(45px);
+    border-bottom: 2px solid var(--primary);
+    opacity: 0;
+    transition: all 0.1s ease-in;
+}
+
+.navbar li:hover::before {
+    cursor: pointer;
+    border-bottom: 2px solid var(--primary);
+    opacity: 1;
+}
+
+.navbar li>i {
+    position: absolute;
+    right: -20px;
+}
+
+.navbar li:last-child::before {
+    transform: translateY(27px);
+}
+
+.navbar li:last-child:hover i {
+    right: -23px;
+    z-index: 1;
+}
+
+.navbar li:last-child {
+    color: var(--primary);
+    font-size: 12px;
+}
+
+.header {
+    padding: 0 128px;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact div {
+    cursor: pointer;
+    margin: 0 15px;
+    font-size: 20px;
+    padding: 30px 2px;
+    color: var(--primary);
+}
+
+.contact div:last-child {
+    border: none;
+    position: relative;
+    /* margin: 0 -10px; */
+}
+
+.contact div:last-child>i {
+    margin-left: 5px;
+}
+
+.contact div:not(:last-child):before {
+    content: "";
+    display: block;
+    transform: translateY(45px);
+    border-bottom: 2px solid var(--primary);
+    opacity: 0;
+    transition: all 0.1s ease-in;
+}
+
+.contact div:hover::before {
+    cursor: pointer;
+    border-bottom: 2px solid var(--primary);
+    opacity: 1;
+}
+
+.contact div:last-child i {
+    transition: all 0.2s ease-in;
+}
+
+.contact div:last-child:hover .language {
+    display: block;
+}
+
+.contact div:last-child:hover i {
+    transform: rotate(-180deg);
+}
+
+.language {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 240px;
+}
+
+.language>li {
+    color: black;
+    cursor: pointer;
+    padding: 15px 25px;
+    font-size: 14px;
+}
+
+.language>li:hover {
+    color: var(--primary);
+    text-decoration: underline;
+    font-weight: 600;
+}
