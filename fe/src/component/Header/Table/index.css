@@ -1,0 +1,88 @@
+.table {
+  position: absolute;
+  margin-top: -2px;
+  width: 100%;
+  height: 60vh;
+  max-height: 60vh;
+  overflow: hidden;
+  display: flex;
+  transition: all 0.2s ease;
+}
+
+.section {
+  background-color: white;
+  padding-left: 145px;
+  width: 420px;
+  padding-top: 50px;
+}
+
+.section1 {
+  padding-left: 5px;
+}
+
+.title {
+  color: #5405bd;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  padding-left: 12px;
+}
+
+.container-section:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.container {
+  border-left: rgb(194, 193, 193) 1px solid;
+  height: 53vh;
+}
+
+.container .container-parent-section {
+  padding-left: 25px;
+}
+
+.container-parent-section {
+  max-height: 53vh;
+  overflow-y: scroll;
+}
+
+.container-parent-section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.container-parent-section::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--primary);
+}
+
+.sc2 {
+  height: 60vh;
+  width: 385px;
+  padding: 50px 80px;
+}
+
+.img-close {
+  display: flex;
+}
+.img-close i {
+  cursor: pointer;
+}
+
+.img-section {
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 45px;
+  margin-bottom: 15px;
+}
+
+.img-section img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.sub-text {
+  width: 350px;
+  font-size: 20px;
+  font-weight: 600;
+}

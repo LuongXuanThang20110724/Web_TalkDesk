@@ -1,25 +1,23 @@
-.text{
-    width: 300px;
-    height: 44px;
-    border-radius: 8px;
-    margin: 0;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: 550;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    transition: all 0.3s ease;
+.option {
+  margin: 5px 20px 5px 0;
+}
+.sc,
+.text {
+  padding: 12px;
+  cursor: pointer;
+  max-width: 360px;
+  border-radius: 6px;
+  font-weight: 550;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  white-space: 25px;
 }
 
-.text:hover{
-    background-color: #e3fcfa;
-}
-
-.icon{
-    color: #994ffa;
+.icon {
+  font-size: 14px;
+  padding-left: 60px;
+  color: #994ffa;
 }
