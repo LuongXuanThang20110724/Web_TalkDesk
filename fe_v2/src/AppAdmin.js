@@ -1,4 +1,4 @@
-import GreatCustomerService from "./pages/GreatCustomerService";
+import GreatCustomerService from "./pages/RealTimeDashBoard";
 
 function App() {
   return (

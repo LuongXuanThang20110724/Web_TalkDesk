@@ -52,6 +52,22 @@ const Header = () => {
             class="fa-solid fa-chevron-down"
             style={{ margin: "0 10px 10px" }}
           ></i>
+          <div className="box-info">
+            <ul>
+              <li>{localStorage.getItem("name")}</li>
+              <li
+                onClick={(e) => {
+                  localStorage.removeItem("login");
+                  localStorage.removeItem("name");
+                  localStorage.getItem("googleAccount") &&
+                    localStorage.removeItem("googleAccount");
+                  document.location.href = "/";
+                }}
+              >
+                Đăng xuất
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
