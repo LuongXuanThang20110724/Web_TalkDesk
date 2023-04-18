@@ -85,7 +85,7 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
+                  Team02
                 </span>
                 <span
                   style={{
@@ -95,53 +95,7 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
-                </span>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                    color: "blue",
-                  }}
-                >
-                  +1
-                </span>
-              </td>
-              <td>
-                <i class="fa-solid fa-circle" style={style}></i>
-                Dom{" "}
-                <i
-                  className="fa-solid fa-chevron-down"
-                  style={{ marginLeft: "5px", fontSize: "10px" }}
-                ></i>
-              </td>
-              <td>6000</td>
-              <td style={{ fontWeight: "bold" }}>...</td>
-            </tr>
-            <tr>
-              <td>Dom</td>
-              <td>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                  }}
-                >
-                  LHD
-                </span>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                  }}
-                >
-                  LHD
+                  Team02
                 </span>
                 <span
                   style={{
@@ -177,7 +131,7 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
+                  Team02
                 </span>
                 <span
                   style={{
@@ -187,53 +141,7 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
-                </span>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                    color: "blue",
-                  }}
-                >
-                  +1
-                </span>
-              </td>
-              <td>
-                <i class="fa-solid fa-circle" style={style}></i>
-                Dom{" "}
-                <i
-                  className="fa-solid fa-chevron-down"
-                  style={{ marginLeft: "5px", fontSize: "10px" }}
-                ></i>
-              </td>
-              <td>6000</td>
-              <td style={{ fontWeight: "bold" }}>...</td>
-            </tr>
-            <tr>
-              <td>Dom</td>
-              <td>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                  }}
-                >
-                  LHD
-                </span>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                  }}
-                >
-                  LHD
+                  Team02
                 </span>
                 <span
                   style={{
@@ -269,7 +177,7 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
+                  Team02
                 </span>
                 <span
                   style={{
@@ -279,53 +187,7 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
-                </span>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                    color: "blue",
-                  }}
-                >
-                  +1
-                </span>
-              </td>
-              <td>
-                <i class="fa-solid fa-circle" style={style}></i>
-                Dom{" "}
-                <i
-                  className="fa-solid fa-chevron-down"
-                  style={{ marginLeft: "5px", fontSize: "10px" }}
-                ></i>
-              </td>
-              <td>6000</td>
-              <td style={{ fontWeight: "bold" }}>...</td>
-            </tr>
-            <tr>
-              <td>Dom</td>
-              <td>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                  }}
-                >
-                  LHD
-                </span>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                  }}
-                >
-                  LHD
+                  Team02
                 </span>
                 <span
                   style={{
@@ -361,7 +223,7 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
+                  Team02
                 </span>
                 <span
                   style={{
@@ -371,53 +233,7 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
-                </span>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                    color: "blue",
-                  }}
-                >
-                  +1
-                </span>
-              </td>
-              <td>
-                <i class="fa-solid fa-circle" style={style}></i>
-                Dom{" "}
-                <i
-                  className="fa-solid fa-chevron-down"
-                  style={{ marginLeft: "5px", fontSize: "10px" }}
-                ></i>
-              </td>
-              <td>6000</td>
-              <td style={{ fontWeight: "bold" }}>...</td>
-            </tr>
-            <tr>
-              <td>Dom</td>
-              <td>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                  }}
-                >
-                  LHD
-                </span>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                  }}
-                >
-                  LHD
+                  Team02
                 </span>
                 <span
                   style={{
@@ -453,7 +269,7 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
+                  Team02
                 </span>
                 <span
                   style={{
@@ -463,53 +279,7 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
-                </span>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                    color: "blue",
-                  }}
-                >
-                  +1
-                </span>
-              </td>
-              <td>
-                <i class="fa-solid fa-circle" style={style}></i>
-                Dom{" "}
-                <i
-                  className="fa-solid fa-chevron-down"
-                  style={{ marginLeft: "5px", fontSize: "10px" }}
-                ></i>
-              </td>
-              <td>6000</td>
-              <td style={{ fontWeight: "bold" }}>...</td>
-            </tr>
-            <tr>
-              <td>Dom</td>
-              <td>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                  }}
-                >
-                  LHD
-                </span>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                  }}
-                >
-                  LHD
+                  Team02
                 </span>
                 <span
                   style={{
@@ -545,7 +315,7 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
+                  Team02
                 </span>
                 <span
                   style={{
@@ -555,53 +325,7 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
-                </span>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                    color: "blue",
-                  }}
-                >
-                  +1
-                </span>
-              </td>
-              <td>
-                <i class="fa-solid fa-circle" style={style}></i>
-                Dom{" "}
-                <i
-                  className="fa-solid fa-chevron-down"
-                  style={{ marginLeft: "5px", fontSize: "10px" }}
-                ></i>
-              </td>
-              <td>6000</td>
-              <td style={{ fontWeight: "bold" }}>...</td>
-            </tr>
-            <tr>
-              <td>Dom</td>
-              <td>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                  }}
-                >
-                  LHD
-                </span>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                  }}
-                >
-                  LHD
+                  Team02
                 </span>
                 <span
                   style={{
@@ -637,7 +361,7 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
+                  Team02
                 </span>
                 <span
                   style={{
@@ -647,53 +371,7 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
-                </span>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                    color: "blue",
-                  }}
-                >
-                  +1
-                </span>
-              </td>
-              <td>
-                <i class="fa-solid fa-circle" style={style}></i>
-                Dom{" "}
-                <i
-                  className="fa-solid fa-chevron-down"
-                  style={{ marginLeft: "5px", fontSize: "10px" }}
-                ></i>
-              </td>
-              <td>6000</td>
-              <td style={{ fontWeight: "bold" }}>...</td>
-            </tr>
-            <tr>
-              <td>Dom</td>
-              <td>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                  }}
-                >
-                  LHD
-                </span>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                  }}
-                >
-                  LHD
+                  Team02
                 </span>
                 <span
                   style={{
@@ -729,7 +407,7 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
+                  Team02
                 </span>
                 <span
                   style={{
@@ -739,53 +417,7 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
-                </span>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                    color: "blue",
-                  }}
-                >
-                  +1
-                </span>
-              </td>
-              <td>
-                <i class="fa-solid fa-circle" style={style}></i>
-                Dom{" "}
-                <i
-                  className="fa-solid fa-chevron-down"
-                  style={{ marginLeft: "5px", fontSize: "10px" }}
-                ></i>
-              </td>
-              <td>6000</td>
-              <td style={{ fontWeight: "bold" }}>...</td>
-            </tr>
-            <tr>
-              <td>Dom</td>
-              <td>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                  }}
-                >
-                  LHD
-                </span>
-                <span
-                  style={{
-                    padding: "5px 10px",
-                    backgroundColor: "rgb(219 219 219)",
-                    borderRadius: "20px ",
-                    marginRight: "5px",
-                  }}
-                >
-                  LHD
+                  Team02
                 </span>
                 <span
                   style={{
@@ -821,7 +453,7 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
+                  Team02
                 </span>
                 <span
                   style={{
@@ -831,7 +463,375 @@ function Live() {
                     marginRight: "5px",
                   }}
                 >
-                  LHD
+                  Team02
+                </span>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                    color: "blue",
+                  }}
+                >
+                  +1
+                </span>
+              </td>
+              <td>
+                <i class="fa-solid fa-circle" style={style}></i>
+                Dom{" "}
+                <i
+                  className="fa-solid fa-chevron-down"
+                  style={{ marginLeft: "5px", fontSize: "10px" }}
+                ></i>
+              </td>
+              <td>6000</td>
+              <td style={{ fontWeight: "bold" }}>...</td>
+            </tr>
+            <tr>
+              <td>Dom</td>
+              <td>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                  }}
+                >
+                  Team02
+                </span>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                  }}
+                >
+                  Team02
+                </span>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                    color: "blue",
+                  }}
+                >
+                  +1
+                </span>
+              </td>
+              <td>
+                <i class="fa-solid fa-circle" style={style}></i>
+                Dom{" "}
+                <i
+                  className="fa-solid fa-chevron-down"
+                  style={{ marginLeft: "5px", fontSize: "10px" }}
+                ></i>
+              </td>
+              <td>6000</td>
+              <td style={{ fontWeight: "bold" }}>...</td>
+            </tr>
+            <tr>
+              <td>Dom</td>
+              <td>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                  }}
+                >
+                  Team02
+                </span>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                  }}
+                >
+                  Team02
+                </span>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                    color: "blue",
+                  }}
+                >
+                  +1
+                </span>
+              </td>
+              <td>
+                <i class="fa-solid fa-circle" style={style}></i>
+                Dom{" "}
+                <i
+                  className="fa-solid fa-chevron-down"
+                  style={{ marginLeft: "5px", fontSize: "10px" }}
+                ></i>
+              </td>
+              <td>6000</td>
+              <td style={{ fontWeight: "bold" }}>...</td>
+            </tr>
+            <tr>
+              <td>Dom</td>
+              <td>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                  }}
+                >
+                  Team02
+                </span>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                  }}
+                >
+                  Team02
+                </span>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                    color: "blue",
+                  }}
+                >
+                  +1
+                </span>
+              </td>
+              <td>
+                <i class="fa-solid fa-circle" style={style}></i>
+                Dom{" "}
+                <i
+                  className="fa-solid fa-chevron-down"
+                  style={{ marginLeft: "5px", fontSize: "10px" }}
+                ></i>
+              </td>
+              <td>6000</td>
+              <td style={{ fontWeight: "bold" }}>...</td>
+            </tr>
+            <tr>
+              <td>Dom</td>
+              <td>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                  }}
+                >
+                  Team02
+                </span>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                  }}
+                >
+                  Team02
+                </span>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                    color: "blue",
+                  }}
+                >
+                  +1
+                </span>
+              </td>
+              <td>
+                <i class="fa-solid fa-circle" style={style}></i>
+                Dom{" "}
+                <i
+                  className="fa-solid fa-chevron-down"
+                  style={{ marginLeft: "5px", fontSize: "10px" }}
+                ></i>
+              </td>
+              <td>6000</td>
+              <td style={{ fontWeight: "bold" }}>...</td>
+            </tr>
+            <tr>
+              <td>Dom</td>
+              <td>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                  }}
+                >
+                  Team02
+                </span>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                  }}
+                >
+                  Team02
+                </span>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                    color: "blue",
+                  }}
+                >
+                  +1
+                </span>
+              </td>
+              <td>
+                <i class="fa-solid fa-circle" style={style}></i>
+                Dom{" "}
+                <i
+                  className="fa-solid fa-chevron-down"
+                  style={{ marginLeft: "5px", fontSize: "10px" }}
+                ></i>
+              </td>
+              <td>6000</td>
+              <td style={{ fontWeight: "bold" }}>...</td>
+            </tr>
+            <tr>
+              <td>Dom</td>
+              <td>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                  }}
+                >
+                  Team02
+                </span>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                  }}
+                >
+                  Team02
+                </span>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                    color: "blue",
+                  }}
+                >
+                  +1
+                </span>
+              </td>
+              <td>
+                <i class="fa-solid fa-circle" style={style}></i>
+                Dom{" "}
+                <i
+                  className="fa-solid fa-chevron-down"
+                  style={{ marginLeft: "5px", fontSize: "10px" }}
+                ></i>
+              </td>
+              <td>6000</td>
+              <td style={{ fontWeight: "bold" }}>...</td>
+            </tr>
+            <tr>
+              <td>Dom</td>
+              <td>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                  }}
+                >
+                  Team02
+                </span>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                  }}
+                >
+                  Team02
+                </span>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                    color: "blue",
+                  }}
+                >
+                  +1
+                </span>
+              </td>
+              <td>
+                <i class="fa-solid fa-circle" style={style}></i>
+                Dom{" "}
+                <i
+                  className="fa-solid fa-chevron-down"
+                  style={{ marginLeft: "5px", fontSize: "10px" }}
+                ></i>
+              </td>
+              <td>6000</td>
+              <td style={{ fontWeight: "bold" }}>...</td>
+            </tr>
+            <tr>
+              <td>Dom</td>
+              <td>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                  }}
+                >
+                  Team02
+                </span>
+                <span
+                  style={{
+                    padding: "5px 10px",
+                    backgroundColor: "rgb(219 219 219)",
+                    borderRadius: "20px ",
+                    marginRight: "5px",
+                  }}
+                >
+                  Team02
                 </span>
                 <span
                   style={{

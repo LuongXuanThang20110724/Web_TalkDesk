@@ -27,8 +27,9 @@ function AppLogin() {
       password: account.password,
     })
       .then(function (response) {
-        if (response.data.email == "admin@admin123") {
+        if (response.data.email == "admin@admin") {
           localStorage.setItem("login", "admin");
+          localStorage.setItem("name", response.data.name);
           document.location.href = "/admin";
         } else {
           localStorage.setItem("login", "user");
@@ -37,7 +38,6 @@ function AppLogin() {
         }
       })
       .catch(function (error) {
-        console.log(error);
         alert("Đăng nhập thất bại...");
       });
   };
@@ -71,6 +71,7 @@ function AppLogin() {
         return;
       }
     }
+
     Axios.post(process.env.REACT_APP_API + "/staff/send-otp", {
       email: account.email,
       otp: OTP,
@@ -115,7 +116,7 @@ function AppLogin() {
             alert(error.response.data);
           });
       } catch (err) {
-        console.log(err);
+        alert(err.response.data);
       }
     },
   });
@@ -198,7 +199,7 @@ function AppLogin() {
                               setHasOTPForgot(true);
                             })
                             .catch(function (error) {
-                              console.log(error);
+                              alert(error.response.data);
                             });
                         }
                       }}

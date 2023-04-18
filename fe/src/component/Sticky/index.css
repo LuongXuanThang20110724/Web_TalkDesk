@@ -1,0 +1,138 @@
+.sticky-container {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  margin-right: 16px;
+  position: fixed;
+  right: 0;
+  top: 35%;
+}
+
+/* 1 */
+.sticky-item-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0.1875rem 0.1875rem 0.3125rem 0 rgb(0 0 0 / 20%);
+  background: #8023f9;
+  transition: all 0.175s ease-in;
+  margin-bottom: 12px;
+}
+
+.sticky-item-1 svg {
+  height: 20px;
+  width: 20px;
+  margin-right: 4px;
+}
+
+.sticky-item-1 .interactive {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.2s;
+  text-align: center;
+  margin-left: 5px;
+  font-family: inter, helvetica, arial;
+  color: #ffffff;
+  font-style: bold;
+}
+
+.sticky-item-1:hover {
+  width: 226px;
+  border-radius: 5px;
+  display: flex;
+}
+
+.sticky-item-1:hover .interactive {
+  padding: 2px;
+  width: 226px;
+}
+
+/* 2 */
+.sticky-item-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0.1875rem 0.1875rem 0.3125rem 0 rgb(0 0 0 / 20%);
+  background: #994ffa;
+  transition: all 0.175s ease-in;
+  margin-bottom: 12px;
+}
+
+.sticky-item-2 svg {
+  height: 20px;
+  width: 20px;
+  margin-right: 4px;
+}
+
+.sticky-item-2 .customized {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
+  font-family: inter, helvetica, arial;
+  color: #ffffff;
+}
+
+.sticky-item-2:hover {
+  width: 226px;
+  border-radius: 5px;
+}
+
+.sticky-item-2:hover .customized {
+  padding: 2px;
+  width: 226px;
+}
+
+/* 3 */
+.sticky-item-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0.1875rem 0.1875rem 0.3125rem 0 rgb(0 0 0 / 20%);
+  background: #bf91fc;
+  transition: all 0.175s ease-in;
+}
+
+.sticky-item-3 svg {
+  height: 20px;
+  width: 20px;
+  margin-right: 4px;
+}
+
+.sticky-item-3 .pricing {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
+  font-family: inter, helvetica, arial;
+  color: #ffffff;
+  font-style: bold;
+}
+
+.sticky-item-3:hover {
+  width: 140px;
+  border-radius: 5px;
+}
+
+.sticky-item-3:hover .pricing {
+  padding: 2px;
+  width: 80px;
+}
+
+svg {
+  fill: #ffffff;
+}
