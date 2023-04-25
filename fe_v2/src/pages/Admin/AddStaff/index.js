@@ -1,50 +1,55 @@
 import React from "react";
-import "./index.css";
 import Button from "../../../component/Button";
 import Axios from "axios";
 
 const AddStaff = () => {
-  const staff = JSON.parse(localStorage.getItem("staff"))
-  const [inforStaff, setInforStaff] = React.useState({ name: staff.name || "", email: staff.email || "", password: staff.password || "" })
-  const url = window.location.pathname
-  const isAdd = url.includes("add-staff")
+  const staff = JSON.parse(localStorage.getItem("staff"));
+  const [inforStaff, setInforStaff] = React.useState({
+    name: staff?.name || "",
+    email: staff?.email || "",
+    password: staff?.password || "",
+  });
+  const url = window.location.pathname;
+  const isAdd = url.includes("add-staff");
 
   const addStaff = (e) => {
     if (!inforStaff.email.includes("@student.hcmute.edu.vn")) {
-      alert("Email phải thuộc hệ thống HCMUTE")
+      alert("Email phải thuộc hệ thống HCMUTE");
       return;
     }
     Axios.post(`${process.env.REACT_APP_API}/admin/addStaff`, inforStaff)
       .then((res) => {
-        alert("Thêm nhân viên thành công")
+        alert("Thêm nhân viên thành công");
         window.location.href = "/admin";
       })
       .catch((err) => {
-        console.log(err)
-      })
-  }
+        console.log(err);
+      });
+  };
 
   const editStaff = (e) => {
     if (!inforStaff.email.includes("@student.hcmute.edu.vn")) {
-      alert("Email phải thuộc hệ thống HCMUTE")
+      alert("Email phải thuộc hệ thống HCMUTE");
       return;
     }
-    Axios.put(`${process.env.REACT_APP_API}/admin/editStaff/${staff._id}`, inforStaff)
+    Axios.put(
+      `${process.env.REACT_APP_API}/admin/editStaff/${staff._id}`,
+      inforStaff
+    )
       .then((res) => {
-        alert("Chỉnh sửa nhân viên thành công")
+        alert("Chỉnh sửa nhân viên thành công");
         window.location.href = "/admin";
       })
       .catch((err) => {
-        console.log(err)
-      })
-  }
-
+        console.log(err);
+      });
+  };
 
   const button = [
     {
       name: isAdd ? "Thêm nhân viên" : "Cập nhật",
       type: 1,
-      onClick:  isAdd ? () => addStaff() : () => editStaff(),
+      onClick: isAdd ? () => addStaff() : () => editStaff(),
     },
     {
       name: "Hủy",
@@ -65,7 +70,9 @@ const AddStaff = () => {
           name="name"
           type="text"
           value={inforStaff.name}
-          onChange={e => setInforStaff({ ...inforStaff, name: e.target.value })}
+          onChange={(e) =>
+            setInforStaff({ ...inforStaff, name: e.target.value })
+          }
         ></input>
       </div>
       <div className="input__label__container">
@@ -76,7 +83,9 @@ const AddStaff = () => {
           name="email"
           type="email"
           value={inforStaff.email}
-          onChange={e => setInforStaff({ ...inforStaff, email: e.target.value })}
+          onChange={(e) =>
+            setInforStaff({ ...inforStaff, email: e.target.value })
+          }
         ></input>
       </div>
       <div className="input__label__container">
@@ -88,7 +97,9 @@ const AddStaff = () => {
           readOnly={!isAdd}
           type="password"
           value={inforStaff.password}
-          onChange={e => setInforStaff({ ...inforStaff, password: e.target.value })}
+          onChange={(e) =>
+            setInforStaff({ ...inforStaff, password: e.target.value })
+          }
         ></input>
       </div>
 

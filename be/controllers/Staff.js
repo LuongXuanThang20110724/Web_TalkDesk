@@ -68,9 +68,12 @@ class Staff {
         .catch((err) => {
           res.json(err);
         });
-    }
-    else {
-      StaffModel.findOne({ email: req.body.email, password: req.body.password, state: true })
+    } else {
+      StaffModel.findOne({
+        email: req.body.email,
+        password: req.body.password,
+        state: true,
+      })
         .then((result) => {
           res.json(result);
         })
@@ -78,23 +81,21 @@ class Staff {
           res.json(err);
         });
     }
-
   }
 
   signup(req, res, next) {
     StaffModel.findOne({ email: req.body.email })
       .then((staff) => {
-        if (staff)
-          res.status(404).send("Email đã tồn tại")
+        if (staff) res.status(404).send("Email đã tồn tại");
         else {
-          const staff = req.body
-          const newStaff = new StaffModel(staff)
-          newStaff.save()
-          res.json(staff)
+          const staff = req.body;
+          const newStaff = new StaffModel(staff);
+          newStaff.save();
+          res.json(staff);
         }
       })
       .catch((err) => {
-        res.json(err)
+        res.json(err);
       });
   }
   logInOrSingInWithGoogle(req, res, next) {
@@ -133,10 +134,11 @@ class Staff {
                     </div>
                     <div style="width: 100%; gap: 10px; padding: 30px 0; display: grid">
                         <div style="font-size: 1.2rem; margin: 0 30px; text-align: center;">
-                        ${result.password
-                ? `<p>Mật khẩu của bạn là: <span style="font-weight: 700;">${result.password}</span></p>`
-                : `<p>Chúng tôi không tìm thấy mật khẩu của bạn</p>`
-              }
+                        ${
+                          result.password
+                            ? `<p>Mật khẩu của bạn là: <span style="font-weight: 700;">${result.password}</span></p>`
+                            : `<p>Chúng tôi không tìm thấy mật khẩu của bạn</p>`
+                        }
                             
                         </div>
                     </div>
