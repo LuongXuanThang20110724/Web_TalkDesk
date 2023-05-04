@@ -57,67 +57,6 @@ const Numbers = () => {
       barValue: barValue
     }
   })
-  
-
-  // const dataStackedBarChart = [
-  //   {
-  //     name: "Step 14",
-  //     "+13474785764 (Customer Support)": 0,
-  //     "+16506662103(Billing)": 20,
-  //     "+17206084079(Customer Support)": 100,
-  //     "+17813994788(Billing)": 250,
-  //     "+19739434580(Sales Line)": 400,
-  //     barValue: barValue
-  //   },
-  //   {
-  //     name: "Step 15",
-  //     "+13474785764 (Customer Support)": 0,
-  //     "+16506662103(Billing)": 10,
-  //     "+17206084079(Customer Support)": 100,
-  //     "+17813994788(Billing)": 252,
-  //     "+19739434580(Sales Line)": 390,
-  //   },
-  //   {
-  //     name: "Step 16",
-  //     "+13474785764 (Customer Support)": 0,
-  //     "+16506662103(Billing)": 20,
-  //     "+17206084079(Customer Support)": 104,
-  //     "+17813994788(Billing)": 255,
-  //     "+19739434580(Sales Line)": 410,
-  //   },
-  //   {
-  //     name: "Step 17",
-  //     "+13474785764 (Customer Support)": 0,
-  //     "+16506662103(Billing)": 10,
-  //     "+17206084079(Customer Support)": 50,
-  //     "+17813994788(Billing)": 50,
-  //     "+19739434580(Sales Line)": 0,
-  //   },
-  //   {
-  //     name: "Step 18",
-  //     "+13474785764 (Customer Support)": 0,
-  //     "+16506662103(Billing)": 0,
-  //     "+17206084079(Customer Support)": 20,
-  //     "+17813994788(Billing)": 0,
-  //     "+19739434580(Sales Line)": 0,
-  //   },
-  //   {
-  //     name: "Step 19",
-  //     "+13474785764 (Customer Support)": 0,
-  //     "+16506662103(Billing)": 20,
-  //     "+17206084079(Customer Support)": 100,
-  //     "+17813994788(Billing)": 270,
-  //     "+19739434580(Sales Line)": 390,
-  //   },
-  //   {
-  //     name: "Step 20",
-  //     "+13474785764 (Customer Support)": 0,
-  //     "+16506662103(Billing)": 10,
-  //     "+17206084079(Customer Support)": 110,
-  //     "+17813994788(Billing)": 260,
-  //     "+19739434580(Sales Line)": 400,
-  //   },
-  // ];
 
   const dataFooter = ["Service Level", "Inbound Calls", "Outbound Calls"];
 

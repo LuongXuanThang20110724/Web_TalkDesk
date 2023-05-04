@@ -19,7 +19,7 @@ const AddCall = () => {
         window.location.href = "/admin/add-call";
       })
       .catch((err) => {
-        console.log("abc");
+        console.log(err);
       });
   };
 
