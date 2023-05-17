@@ -1,6 +1,15 @@
-FROM python:3.9
+FROM node:lts-alpine
+
+RUN npm install -g nodemon http-server
+
 WORKDIR /app
-COPY ./requirements.txt .
-RUN pip install -r ./requirements.txt
+
+COPY package*.json ./
+
+RUN npm install
+
 COPY . .
-EXPOSE 8000
+
+EXPOSE 5000
+
+CMD [ "http-server", "dist" ]
