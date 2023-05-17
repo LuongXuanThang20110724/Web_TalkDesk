@@ -2,9 +2,8 @@ name: CI/CD
 on:
   push:
     branches: [ main ]
-docker:
-  jobs:
-    build:
+jobs:
+    deploy:
       runs-on: ubuntu-latest
       steps:
         - name: Checkout code
