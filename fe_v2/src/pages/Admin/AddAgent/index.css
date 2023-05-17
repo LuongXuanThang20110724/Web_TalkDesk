@@ -67,6 +67,7 @@
 }
 
 .active {
-  background: #bebbbb !important;
+  background: antiquewhite !important;
   color: #000 !important;
+  font-weight: bold;
 }

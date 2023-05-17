@@ -10,6 +10,13 @@ router.get("/getAllPhoneNumbers", AgentController.getAllPhoneNumbers);
 router.get("/getAllWaitime", AgentController.getAllWaitime);
 router.get("/getAllStatusTime", AgentController.getAllStatusTime);
 router.get("/getAllStatus", AgentController.getAllStatus);
-router.get("/getAllPhoneNumbersAndMonth", AgentController.getAllPhoneNumbersAndMonth);
+router.get(
+  "/getAllPhoneNumbersAndMonth",
+  AgentController.getAllPhoneNumbersAndMonth
+);
+router.get(
+  "/getKeyAndQuantityInCalls",
+  AgentController.getKeyAndQuantityInCalls
+);
 
 module.exports = router;
