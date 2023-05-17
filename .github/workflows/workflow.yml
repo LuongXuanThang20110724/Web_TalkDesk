@@ -38,6 +38,7 @@ jobs:
           tags: congquyenhuynh111/app3:v1
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
+   
 
       - name: Deploy to server
         uses: appleboy/ssh-action@master
