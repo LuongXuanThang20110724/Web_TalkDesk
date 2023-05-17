@@ -1,15 +1,6 @@
-FROM node:lts-alpine
-
-RUN npm install -g http-server
-
+FROM python:3.9
 WORKDIR /app
-
-COPY package*.json ./
-
-RUN npm install
-
+COPY ./requirements.txt .
+RUN pip install -r ./requirements.txt
 COPY . .
-
-EXPOSE 5000
-
-CMD [ "http-server", "index.js" ]
+EXPOSE 8000
