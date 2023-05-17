@@ -1,11 +1,24 @@
 const StaffModel = require("../models/Staff");
 
 class Admin {
-  // get all staff state true [GET] /admin/getAllStaff
+  // get all staff state true [GET] /admin/getAllStaff?pageSize=5&pageIndex=2&search=abc
   getAllStaff(req, res, next) {
-    StaffModel.find({ state: true })
-      .then((staff) => {
-        res.json(staff);
+    const pageSize = parseInt(req.query.pageSize);
+    const pageIndex = parseInt(req.query.pageIndex);
+    const search = req.query.search;
+
+    const query = search
+      ? { state: true, name: { $regex: search, $options: "i" } }
+      : { state: true };
+
+    Promise.all([
+      StaffModel.countDocuments(query),
+      StaffModel.find(query)
+        .skip((pageIndex - 1) * pageSize)
+        .limit(pageSize),
+    ])
+      .then(([total, staff]) => {
+        res.json({ total, staff });
       })
       .catch((err) => {
         res.json(err);

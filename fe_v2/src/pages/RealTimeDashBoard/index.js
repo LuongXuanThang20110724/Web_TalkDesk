@@ -6,6 +6,7 @@ import Inbound from "./Inbound";
 import ServiceLevel from "./ServiceLevel";
 import Agents from "./Agents";
 import Numbers from "./Numbers";
+import StatisticKeyCall from "./StatisticKeyCall";
 
 function RealTimeDashBoard() {
   const [eleNavbar, setEleNavbar] = React.useState("Live");
@@ -15,6 +16,7 @@ function RealTimeDashBoard() {
     ServiceLevel: { src: <ServiceLevel /> },
     Agents: { src: <Agents /> },
     Numbers: { src: <Numbers /> },
+    StatisticKeyCall: { src: <StatisticKeyCall /> },
   };
   return (
     <div id="RealTimeDashBoard">

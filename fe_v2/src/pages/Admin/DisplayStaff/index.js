@@ -2,23 +2,31 @@ import React from "react";
 import "./index.css";
 import Button from "../../../component/Button";
 import Axios from "axios";
-import DisplayDeletedStaff from "../DisplayDeletedStaff";
+import Pagination from "../../../component/Pagination";
 
 const DisplayStaff = () => {
+  const [totalPage, setTotalPage] = React.useState(0);
   const data = ["No", "Name", "Email", "Password", "", ""];
   const [listStaff, setListStaff] = React.useState([]);
   const [isDelete, setIsDelete] = React.useState(false);
+  const [pageIndex, setPageIndex] = React.useState(1);
+  const [search, setSearch] = React.useState("");
 
   React.useEffect(() => {
-    Axios.get(`${process.env.REACT_APP_API}/admin/getAllStaff`)
+    Axios.get(
+      `${process.env.REACT_APP_API}/admin/getAllStaff?pageSize=${process.env.REACT_APP_PAGESIZE}&pageIndex=${pageIndex}&search=${search}`
+    )
       .then((res) => {
-        setListStaff(res.data);
+        setListStaff(res.data.staff);
+        setTotalPage(res.data.total);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, [isDelete]);
-
+  }, [isDelete, pageIndex, search]);
+  const setPage = (page) => {
+    setPageIndex(page);
+  };
   const getStaffKeys = () => {
     if (listStaff.length > 0) {
       return data.map((value) => {
@@ -88,22 +96,27 @@ const DisplayStaff = () => {
   };
 
   const Search = () => {
-    const input = document.querySelector(".search-staff input");
-    const filter = input.value.toUpperCase();
-    const table = document.querySelector(".staff-table");
-    const tr = table.getElementsByTagName("tr");
-    for (let i = 0; i < tr.length; i++) {
-      const td = tr[i].getElementsByTagName("td")[1];
-      if (td) {
-        const textValue = td.textContent || td.innerText;
-        if (textValue.toUpperCase().indexOf(filter) > -1) {
-          tr[i].style.display = "";
-        } else {
-          tr[i].style.display = "none";
-        }
-      }
-    }
+    setSearch(document.getElementById("search-staff").value);
+    // console.log(document.getElementById("search-staff").value);
   };
+
+  // const Search = () => {
+  //   const input = document.querySelector(".search-staff input");
+  //   const filter = input.value.toUpperCase();
+  //   const table = document.querySelector(".staff-table");
+  //   const tr = table.getElementsByTagName("tr");
+  //   for (let i = 0; i < tr.length; i++) {
+  //     const td = tr[i].getElementsByTagName("td")[1];
+  //     if (td) {
+  //       const textValue = td.textContent || td.innerText;
+  //       if (textValue.toUpperCase().indexOf(filter) > -1) {
+  //         tr[i].style.display = "";
+  //       } else {
+  //         tr[i].style.display = "none";
+  //       }
+  //     }
+  //   }
+  // };
 
   return (
     <div className="container-staff">
@@ -111,9 +124,10 @@ const DisplayStaff = () => {
         <div className="search-staff">
           <input
             type="text"
+            id="search-staff"
             placeholder="Nhập tên nhân viên cần tìm..."
-            onChange={(e) => Search()}
           />
+          <Button text="Tìm" type={1} onClick={Search} />
         </div>
         <Button
           text="Danh sách nhân viên bị xóa"
@@ -127,6 +141,8 @@ const DisplayStaff = () => {
         <thead>{getStaffKeys()}</thead>
         <tbody>{getStaffValues()}</tbody>
       </table>
+
+      <Pagination total={totalPage} setPage={setPage} />
     </div>
   );
 };
