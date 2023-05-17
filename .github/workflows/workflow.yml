@@ -19,7 +19,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: .
+          context: ./fev_2/Dockerfile
           push: true
           tags: congquyenhuynh111/app3:v1
 
