@@ -12,6 +12,7 @@ const Agent = new Schema(
     waitTime: { type: Number },
     phone: { type: String },
     month: { type: Number },
+    content: { type: String },
   },
   {
     timestamps: true,

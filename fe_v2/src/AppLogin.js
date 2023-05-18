@@ -119,6 +119,10 @@ function AppLogin() {
       }
     },
   });
+<<<<<<< HEAD
+=======
+
+>>>>>>> ThangLuong
   return (
     <div className="container">
       <div className="form-box">

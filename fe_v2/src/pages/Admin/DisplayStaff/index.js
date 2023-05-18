@@ -3,8 +3,14 @@ import "./index.css";
 import Button from "../../../component/Button";
 import Axios from "axios";
 import Pagination from "../../../component/Pagination";
+<<<<<<< HEAD
 
 const DisplayStaff = () => {
+=======
+import RemoveSpecialCharacters from "../../../utils/RemoveSpecialCharacters";
+
+const DisplayStaff = (props) => {
+>>>>>>> ThangLuong
   const [totalPage, setTotalPage] = React.useState(0);
   const data = ["No", "Name", "Email", "Password", "", ""];
   const [listStaff, setListStaff] = React.useState([]);
@@ -88,11 +94,20 @@ const DisplayStaff = () => {
   };
 
   const AddStaff = () => {
+<<<<<<< HEAD
     document.location.href = "/admin/add-staff";
   };
 
   const DisplayDeletedStaff = () => {
     document.location.href = "/admin/display-deleted-staff";
+=======
+    // props.handleSet(RemoveSpecialCharacters("AddStaff"));
+    props.handleSet(RemoveSpecialCharacters("AddAgent"));
+  };
+
+  const DisplayDeletedStaff = () => {
+    props.handleSet(RemoveSpecialCharacters("DisplayDeletedStaff"));
+>>>>>>> ThangLuong
   };
 
   const Search = () => {

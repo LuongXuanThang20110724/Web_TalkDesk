@@ -1,5 +1,6 @@
 import RealTimeDashBoard from "./pages/RealTimeDashBoard";
 import Header from "./component/Header";
+<<<<<<< HEAD
 import { useParams, Routes, Route } from "react-router-dom";
 import RemoveSpecialCharacters from "./utils/RemoveSpecialCharacters";
 
@@ -21,6 +22,13 @@ function AppUser() {
         <Route path="/" element={<Element />} />
         <Route path="/:slug" element={<Element />} />
       </Routes>
+=======
+function AppUser() {
+  return (
+    <div className="App">
+      <Header />
+      <RealTimeDashBoard />
+>>>>>>> ThangLuong
     </div>
   );
 }

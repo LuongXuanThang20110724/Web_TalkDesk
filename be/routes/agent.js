@@ -19,4 +19,6 @@ router.get(
   AgentController.getKeyAndQuantityInCalls
 );
 
+router.get("/keywordstatistics", AgentController.keywordstatistics);
+
 module.exports = router;

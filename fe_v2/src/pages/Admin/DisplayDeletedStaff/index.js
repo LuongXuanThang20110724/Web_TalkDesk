@@ -2,8 +2,14 @@ import React from "react";
 import "./index.css";
 import Button from "../../../component/Button";
 import Axios from "axios";
+<<<<<<< HEAD
 
 const DisplayDeletedStaff = () => {
+=======
+import RemoveSpecialCharacters from "../../../utils/RemoveSpecialCharacters";
+
+const DisplayDeletedStaff = (props) => {
+>>>>>>> ThangLuong
   const data = ["", "No", "name", "email", "password", "", ""];
   const [listStaff, setListStaff] = React.useState([]);
   const [isRestore, setIsRestore] = React.useState(false);
@@ -186,7 +192,11 @@ const DisplayDeletedStaff = () => {
   };
 
   const BackToAdminHome = () => {
+<<<<<<< HEAD
     document.location.href = "/admin";
+=======
+    props.handleSet(RemoveSpecialCharacters("Admin"));
+>>>>>>> ThangLuong
   };
 
   return (

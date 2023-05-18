@@ -6,6 +6,7 @@ function Slider(props) {
     props;
   return (
     <div className={`${bgParent}`}>
+<<<<<<< HEAD
       <div
         className={`slider ${positionOfImg == "left" ? "swap-img" : ""} ${
           bgChild ? bgChild : ""
@@ -21,6 +22,13 @@ function Slider(props) {
                 <br />
               </>
             );
+=======
+      <div className="slider">
+        <div className="info">
+          <h1>{text}</h1>
+          {button.map((item) => {
+            return <Button text={item.name} type={item.type} />;
+>>>>>>> ThangLuong
           })}
         </div>
         <div>
