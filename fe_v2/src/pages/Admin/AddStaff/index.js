@@ -1,14 +1,9 @@
 import React from "react";
 import Button from "../../../component/Button";
 import Axios from "axios";
-<<<<<<< HEAD
-
-const AddStaff = () => {
-=======
 import RemoveSpecialCharacters from "../../../utils/RemoveSpecialCharacters";
 
 const AddStaff = (props) => {
->>>>>>> ThangLuong
   const staff = JSON.parse(localStorage.getItem("staff"));
   const [inforStaff, setInforStaff] = React.useState({
     name: staff?.name || "",
@@ -26,11 +21,7 @@ const AddStaff = (props) => {
     Axios.post(`${process.env.REACT_APP_API}/admin/addStaff`, inforStaff)
       .then((res) => {
         alert("Thêm nhân viên thành công");
-<<<<<<< HEAD
-        window.location.href = "/admin";
-=======
         props.handleSet(RemoveSpecialCharacters("Admin"));
->>>>>>> ThangLuong
       })
       .catch((err) => {
         console.log(err);
@@ -48,11 +39,7 @@ const AddStaff = (props) => {
     )
       .then((res) => {
         alert("Chỉnh sửa nhân viên thành công");
-<<<<<<< HEAD
-        window.location.href = "/admin";
-=======
         props.handleSet(RemoveSpecialCharacters("Admin"));
->>>>>>> ThangLuong
       })
       .catch((err) => {
         console.log(err);
@@ -69,11 +56,7 @@ const AddStaff = (props) => {
       name: "Hủy",
       type: 2,
       onClick: () => {
-<<<<<<< HEAD
-        window.location.href = "/admin";
-=======
         props.handleSet(RemoveSpecialCharacters("Admin"));
->>>>>>> ThangLuong
       },
     },
   ];

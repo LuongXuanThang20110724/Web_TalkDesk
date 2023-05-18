@@ -2,14 +2,9 @@ import React from "react";
 import "./index.css";
 import Button from "../../../component/Button";
 import Axios from "axios";
-<<<<<<< HEAD
-
-const AddAgent = () => {
-=======
 import RemoveSpecialCharacters from "../../../utils/RemoveSpecialCharacters";
 
 const AddAgent = (props) => {
->>>>>>> ThangLuong
   const [newAgent, setNewAgent] = React.useState({
     name: "",
     ringGroup: "",
@@ -18,10 +13,7 @@ const AddAgent = (props) => {
     waitTime: "",
     phone: "",
     month: "",
-<<<<<<< HEAD
-=======
     content: "",
->>>>>>> ThangLuong
   });
 
   const [ringGroup, setRingGroup] = React.useState([]);
@@ -73,11 +65,7 @@ const AddAgent = (props) => {
       name: "Hủy",
       type: 2,
       onClick: () => {
-<<<<<<< HEAD
-        window.location.href = "/admin";
-=======
         props.handleSet(RemoveSpecialCharacters("Admin"));
->>>>>>> ThangLuong
       },
     },
   ];
@@ -200,8 +188,6 @@ const AddAgent = (props) => {
         ></input>
       </div>
 
-<<<<<<< HEAD
-=======
       <div className="input__label__container">
         <label class="input__label">Content</label>
         <textarea
@@ -216,7 +202,6 @@ const AddAgent = (props) => {
         ></textarea>
       </div>
 
->>>>>>> ThangLuong
       <div style={{ margin: "20px 0 0 -20px" }}>
         {button.map((item) => {
           return (

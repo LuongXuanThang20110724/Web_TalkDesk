@@ -7,12 +7,6 @@ import ServiceLevel from "./ServiceLevel";
 import Agents from "./Agents";
 import Numbers from "./Numbers";
 import StatisticKeyCall from "./StatisticKeyCall";
-<<<<<<< HEAD
-
-function RealTimeDashBoard() {
-  const [eleNavbar, setEleNavbar] = React.useState("Live");
-  const dict = {
-=======
 import DisplayStaff from "../Admin/DisplayStaff";
 import AddAgent from "../Admin/AddAgent";
 import AddCall from "../Admin/AddCall";
@@ -35,20 +29,15 @@ function RealTimeDashBoard() {
     AddStaff: { src: <AddStaff handleSet={HandleSet} /> },
     DisplayDeletedStaff: { src: <DisplayDeletedStaff handleSet={HandleSet} /> },
 
->>>>>>> ThangLuong
     Live: { src: <Live /> },
     Inbound: { src: <Inbound /> },
     ServiceLevel: { src: <ServiceLevel /> },
     Agents: { src: <Agents /> },
     Numbers: { src: <Numbers /> },
     StatisticKeyCall: { src: <StatisticKeyCall /> },
-<<<<<<< HEAD
-  };
-=======
     StatisticKeyWord: { src: <StatisticKeyWord /> },
   };
 
->>>>>>> ThangLuong
   return (
     <div id="RealTimeDashBoard">
       <div className="main-content">
