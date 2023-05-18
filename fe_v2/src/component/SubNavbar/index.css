@@ -29,3 +29,8 @@
   color: #00bfff;
   background-color: white;
 }
+
+.navbar-feature li.active {
+  color: #00bfff;
+  background-color: white;
+}
