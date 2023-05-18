@@ -49,4 +49,6 @@ jobs:
             docker stop my-container-name || true
             docker rm my-container-name || true 
             docker pull congquyenhuynh111/app3:v1
-            docker run -p 80:80 -d congquyenhuynh111/app3:v1
+            docker run -p 80:80 -d --name my-container-name congquyenhuynh111/app3:v1
+            cd Web_TalkDesk/be
+            docker-compose up -d
