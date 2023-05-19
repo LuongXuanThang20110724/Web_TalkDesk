@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ./be
+      dockerfile: Dockerfile
+    container_name: backend
+    command: npm start
+    ports:
+      - 5000:5000
+    # Các cấu hình bổ sung cho dịch vụ backend
+
+  frontend:
+    build:
+      context: ./fe_v2
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - 80:80
+    depends_on:
+      - backend
+    # Các cấu hình bổ sung cho dịch vụ frontend
