@@ -10,14 +10,10 @@ const AddStaff = (props) => {
     email: staff?.email || "",
     password: staff?.password || "",
   });
-  const url = window.location.pathname;
-  const isAdd = url.includes("add-staff");
+
+  const isAdd = localStorage.getItem("Mode") === "Add";
 
   const addStaff = (e) => {
-    if (!inforStaff.email.includes("@student.hcmute.edu.vn")) {
-      alert("Email phải thuộc hệ thống HCMUTE");
-      return;
-    }
     Axios.post(`${process.env.REACT_APP_API}/admin/addStaff`, inforStaff)
       .then((res) => {
         alert("Thêm nhân viên thành công");
@@ -29,10 +25,6 @@ const AddStaff = (props) => {
   };
 
   const editStaff = (e) => {
-    if (!inforStaff.email.includes("@student.hcmute.edu.vn")) {
-      alert("Email phải thuộc hệ thống HCMUTE");
-      return;
-    }
     Axios.put(
       `${process.env.REACT_APP_API}/admin/editStaff/${staff._id}`,
       inforStaff
@@ -56,6 +48,7 @@ const AddStaff = (props) => {
       name: "Hủy",
       type: 2,
       onClick: () => {
+        localStorage.removeItem("Mode");
         props.handleSet(RemoveSpecialCharacters("Admin"));
       },
     },
