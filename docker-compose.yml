@@ -23,7 +23,7 @@ services:
       - backend
     # Các cấu hình bổ sung cho dịch vụ frontend
     command: 
-      - bash
+      - sh
       - -c
       - |
         ./update_env.sh
