@@ -1,9 +1,8 @@
-FROM node:lts-alpine as build 
+FROM node:latest as build 
 
 WORKDIR /app
 
 COPY package.json .
-RUN apk update && apk add --no-cache nodejs-npm
 RUN npm install 
 COPY . .
 RUN npm run build
