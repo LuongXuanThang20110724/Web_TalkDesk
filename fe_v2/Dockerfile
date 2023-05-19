@@ -3,7 +3,7 @@ FROM node:lts-alpine as build
 WORKDIR /app
 
 COPY package.json .
-RUN apk update && apk add --no-cache npm
+RUN apk update && apk add --no-cache nodejs-npm
 RUN npm install 
 COPY . .
 RUN npm run build
