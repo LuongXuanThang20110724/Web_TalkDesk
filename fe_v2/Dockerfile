@@ -6,9 +6,13 @@ COPY package.json .
 RUN npm install 
 COPY . .
 RUN npm run build
-ARG REACT_APP_API
-ENV REACT_APP_API $REACT_APP_API
+
 
 FROM nginx:stable-alpine
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf 
 COPY --from=build /app/build /usr/share/nginx/html 
+
+COPY update_env.sh /app/update_env.sh
+COPY .env /app/.env
+
+CMD sh -c "./update_env.sh && nginx -g 'daemon off;'"

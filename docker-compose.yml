@@ -22,11 +22,5 @@ services:
     depends_on:
       - backend
     # Các cấu hình bổ sung cho dịch vụ frontend
-    command: 
-      - sh
-      - -c
-      - |
-        cd ..
-        ./update_env.sh
-        cd fe_v2
-        npm start
+    command: sh -c "./update_env.sh && npm start"
+      
