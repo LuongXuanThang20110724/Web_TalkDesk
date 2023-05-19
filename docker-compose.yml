@@ -26,5 +26,7 @@ services:
       - sh
       - -c
       - |
+        cd ..
         ./update_env.sh
+        cd fe_v2
         npm start
