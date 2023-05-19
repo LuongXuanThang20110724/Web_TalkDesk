@@ -14,9 +14,12 @@ services:
     build:
       context: ./fe_v2
       dockerfile: Dockerfile
+      args:
+        - REACT_APP_API=${REACT_APP_API}
     container_name: frontend
     ports:
       - 80:80
     depends_on:
       - backend
     # Các cấu hình bổ sung cho dịch vụ frontend
+    command: bash -c "./update_env.sh && npm start"
