@@ -46,9 +46,6 @@ jobs:
           username: ec2-user
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            docker stop my-container-name || true
-            docker rm my-container-name || true 
-            docker pull congquyenhuynh111/app3:v1
-            docker run -p 80:80 -d --name my-container-name congquyenhuynh111/app3:v1
-            cd Web_TalkDesk/be
+            docker-compose down
+            git clone https://github.com/LuongXuanThang20110724/Web_TalkDesk.git
             docker-compose up -d
