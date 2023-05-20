@@ -19,10 +19,14 @@ class Staff {
           }
           result = !result;
         }
-        console.log(result);
-        if (result) {
+
+        if (result && req.body.state) {
+          res.status(404).send("Email không có trong hệ thống!");
+        }
+        else if (result && req.body.state != "forgot") {
           res.status(404).send("Email đã tồn tại");
-        } else {
+        }
+        else {
           const options = {
             from: `TALKDESK <${process.env.USER}>`,
             to: req.body.email,
@@ -134,11 +138,10 @@ class Staff {
                     </div>
                     <div style="width: 100%; gap: 10px; padding: 30px 0; display: grid">
                         <div style="font-size: 1.2rem; margin: 0 30px; text-align: center;">
-                        ${
-                          result.password
-                            ? `<p>Mật khẩu của bạn là: <span style="font-weight: 700;">${result.password}</span></p>`
-                            : `<p>Chúng tôi không tìm thấy mật khẩu của bạn</p>`
-                        }
+                        ${result.password
+                ? `<p>Mật khẩu của bạn là: <span style="font-weight: 700;">${result.password}</span></p>`
+                : `<p>Chúng tôi không tìm thấy mật khẩu của bạn</p>`
+              }
                             
                         </div>
                     </div>

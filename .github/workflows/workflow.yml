@@ -1,8 +1,7 @@
 name: Talk Desk CI
 on:
   push:
-    branches: [main]
-
+    branches: [dev]
 jobs:
   docker:
     runs-on: ubuntu-latest
@@ -16,20 +15,22 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
           script: |
             if [ -d "Web_TalkDesk" ]; then
-            cd Web_TalkDesk
-            git pull origin dev
-            cd ~
+              cd Web_TalkDesk
+              git pull origin dev
+              cd ~
             else
-              git clone -b dev https://github.com/LuongXuanThang20110724/Web_TalkDesk.git
+                git clone -b dev https://github.com/LuongXuanThang20110724/Web_TalkDesk.git
             fi
       - name: Run back-end and front-end
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.PRIVATE_KEY }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
           script: |
             cd ~
             cd Web_TalkDesk
