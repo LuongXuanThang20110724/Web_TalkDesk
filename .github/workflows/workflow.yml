@@ -1,7 +1,7 @@
 name: Talk Desk CI
 on:
   push:
-    branches: [dev]
+    branches: [main]
 
 jobs:
   docker:
@@ -13,8 +13,8 @@ jobs:
       - name: Deploy to server
         uses: appleboy/ssh-action@master
         with:
-          host: 3.214.182.105
-          username: ec2-user
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             if [ -d "Web_TalkDesk" ]; then
@@ -27,9 +27,9 @@ jobs:
       - name: Run back-end and front-end
         uses: appleboy/ssh-action@master
         with:
-          host: 3.214.182.105
-          username: ec2-user
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATE_KEY }}
           script: |
             cd ~
             cd Web_TalkDesk
