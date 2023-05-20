@@ -46,8 +46,8 @@ Bước 3: Cài đặt node trong thư mục fe_v2
 ![image](https://github.com/LuongXuanThang20110724/Web_TalkDesk/assets/127852125/2b5df84e-e740-4558-a3f0-742b7e187b81)
 
 # - Tài khoản admin:
-	## + Tên tài khoản: admin@admin
-	## + Mật khẩu: 1
+	# + Tên tài khoản: admin@admin
+	# + Mật khẩu: 1
 - Khi đăng nhập bằng tài khoản admin bên giao diện sẽ có thêm chức năng “Admin”:
 
 ![image](https://github.com/LuongXuanThang20110724/Web_TalkDesk/assets/127852125/2837d389-287a-441d-9345-5440ffe20c8a)
