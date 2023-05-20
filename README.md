@@ -14,7 +14,23 @@ Bước 3: Cài đặt node trong thư mục fe_v2
   
 ![image](https://github.com/LuongXuanThang20110724/Web_TalkDesk/assets/127852125/55241762-de90-4fe5-847c-9e944df6cf9b)
 
-- Nếu sử dụng đường link api đã deploy (Nhưng chỉ sử dụng được khi đã run trên docker):
+- Nếu sử dụng đường link api local:
+	+ Bước 1: Vào thư mục fe_v2 và mở file .env
+	+ Bước 2: Để đường link là: REACT_APP_API = http://localhost:5000
+	
+![image](https://github.com/LuongXuanThang20110724/Web_TalkDesk/assets/127852125/a9ce8568-a9e0-4804-a8cc-5ced69df4375)
+
+  + Bước 3: 
+  
+      Di chuyển đến thư mục fe_v2 và tiến hành chạy fe_v2
+        - Dùng lệnh: npm start
+        
+      Đồng thời mở thêm 1 terminal di chuyển đến thư mục be và tiến hành chạy be
+        - Dùng lệnh: npm start
+        
+ ![image](https://github.com/LuongXuanThang20110724/Web_TalkDesk/assets/127852125/6b363476-5c5e-4aba-9697-00c260c1c3c9)
+ 
+ - Nếu sử dụng đường link api đã deploy (Nhưng chỉ sử dụng được khi đã run trên docker):
 	+ Bước 1: Vào thư mục fe_v2 và mở file .env
 	+ Bước 2:  Để đường link là: REACT_APP_API = http://webtalkdesk.duckdns.org:5000
 	
@@ -24,20 +40,6 @@ Bước 3: Cài đặt node trong thư mục fe_v2
 		  Dùng lệnh: npm start
 		  
 ![image](https://github.com/LuongXuanThang20110724/Web_TalkDesk/assets/127852125/2496f31d-4059-472f-859a-feacb3908cab)
-
-- Nếu sử dụng đường link api local:
-	+ Bước 1: Vào thư mục fe_v2 và mở file .env
-	+ Bước 2: Để đường link là: REACT_APP_API = http://localhost:5000
-	
-![image](https://github.com/LuongXuanThang20110724/Web_TalkDesk/assets/127852125/a9ce8568-a9e0-4804-a8cc-5ced69df4375)
-
-  + Bước 3: 
-      Di chuyển đến thư mục fe_v2 và tiến hành chạy fe_v2
-        - Dùng lệnh: npm start
-      Đồng thời mở thêm 1 terminal di chuyển đến thư mục be và tiến hành chạy be
-        - Dùng lệnh: npm start
-        
- ![image](https://github.com/LuongXuanThang20110724/Web_TalkDesk/assets/127852125/6b363476-5c5e-4aba-9697-00c260c1c3c9)
  
 - Sau khi hoàn thành các bước:
 
