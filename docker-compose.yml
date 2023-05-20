@@ -14,8 +14,6 @@ services:
     build:
       context: ./fe_v2
       dockerfile: Dockerfile
-      args:
-        - REACT_APP_API=${REACT_APP_API}
     container_name: frontend
     ports:
       - 80:80
