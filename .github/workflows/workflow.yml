@@ -21,9 +21,9 @@ jobs:
             cd Web_TalkDesk
             git pull origin dev
             cd ~
-          else
-            git clone -b dev https://github.com/LuongXuanThang20110724/Web_TalkDesk.git
-          fi
+            else
+              git clone -b dev https://github.com/LuongXuanThang20110724/Web_TalkDesk.git
+            fi
       - name: Run back-end and front-end
         uses: appleboy/ssh-action@master
         with:
