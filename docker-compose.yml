@@ -20,4 +20,12 @@ services:
     depends_on:
       - backend
     # Các cấu hình bổ sung cho dịch vụ frontend
+  mongodb:
+    image: mongo
+    container_name: database
+    restart: always
+    volumes:
+      - ./data:/data/db
+    ports:
+      - 27017:27017
       
