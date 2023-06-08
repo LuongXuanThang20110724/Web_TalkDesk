@@ -8,6 +8,8 @@
       command: npm start
       ports:
         - 5000:5000
+      depends_on:
+        - mongodb
       # Các cấu hình bổ sung cho dịch vụ backend
 
     frontend:
