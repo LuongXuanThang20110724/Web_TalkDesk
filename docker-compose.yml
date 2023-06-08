@@ -12,6 +12,8 @@
         - mongodb
       env_file:
         - ./be/.env
+      networks:
+        - mynetwork
       # Các cấu hình bổ sung cho dịch vụ backend
 
     frontend:
@@ -24,6 +26,8 @@
       depends_on:
         - backend
       # Các cấu hình bổ sung cho dịch vụ frontend
+      networks:
+        - mynetwork
     mongodb:
       image: mongo
       container_name: database
@@ -35,5 +39,10 @@
         - 27017:27017
       command: mongorestore --archive=/TalkDeskDB.archive --db TalkDeskDB
       environment:
-        MONGO_INITDB_ROOT_USERNAME: ThangLuong268
-        MONGO_INITDB_ROOT_PASSWORD: Thang2608
+          MONGO_INITDB_ROOT_USERNAME: ThangLuong268
+          MONGO_INITDB_ROOT_PASSWORD: Thang2608
+      networks:
+        - mynetwork
+  networks:
+    mynetwork:
+      external: true
