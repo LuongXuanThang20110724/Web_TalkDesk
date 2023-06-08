@@ -5,7 +5,7 @@
         context: ./be
         dockerfile: Dockerfile
       container_name: backend
-      command: sh -c './wait-for-it.sh database:27017 -- npm start'
+      command: npm start
       ports:
         - 5000:5000
       depends_on:
