@@ -32,4 +32,4 @@
       command: mongorestore --archive=/TalkDeskDB.archive --db TalkDeskDB
       environment:
         MONGO_INITDB_ROOT_USERNAME: ThangLuong268
-        MONGO_INITDB_ROOT_PASSWORD: ThangLuong2608
+        MONGO_INITDB_ROOT_PASSWORD: Thang2608
