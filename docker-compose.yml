@@ -29,7 +29,7 @@
       container_name: database
       restart: always
       volumes:
-        - ./data:/data/db
+        #- ./data:/data/db
         - ./TalkDeskDB.archive:/TalkDeskDB.archive
       ports:
         - 27017:27017
