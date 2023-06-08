@@ -1,33 +1,35 @@
-version: '3.8'
-services:
-  backend:
-    build:
-      context: ./be
-      dockerfile: Dockerfile
-    container_name: backend
-    command: npm start
-    ports:
-      - 5000:5000
-    # Các cấu hình bổ sung cho dịch vụ backend
+  version: '3.8'
+  services:
+    backend:
+      build:
+        context: ./be
+        dockerfile: Dockerfile
+      container_name: backend
+      command: npm start
+      ports:
+        - 5000:5000
+      # Các cấu hình bổ sung cho dịch vụ backend
 
-  frontend:
-    build:
-      context: ./fe_v2
-      dockerfile: Dockerfile
-    container_name: frontend
-    ports:
-      - 80:80
-    depends_on:
-      - backend
-    # Các cấu hình bổ sung cho dịch vụ frontend
-  mongodb:
-    image: mongo
-    container_name: database
-    restart: always
-    volumes:
+    frontend:
+      build:
+        context: ./fe_v2
+        dockerfile: Dockerfile
+      container_name: frontend
+      ports:
+        - 80:80
+      depends_on:
+        - backend
+      # Các cấu hình bổ sung cho dịch vụ frontend
+    mongodb:
+      image: mongo
+      container_name: database
+      restart: always
+      volumes:
       - ./data:/data/db
-    ports:
-      - 27017:27017
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: your_username
-      MONGO_INITDB_ROOT_PASSWORD: your_password
+      - ./TalkDeskDB.archive:/TalkDeskDB.archive
+      ports:
+        - 27017:27017
+      command: mongorestore --archive=/TalkDeskDB.archive --db TalkDeskDB
+      environment:
+        MONGO_INITDB_ROOT_USERNAME: root
+        MONGO_INITDB_ROOT_PASSWORD: root
