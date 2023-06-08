@@ -27,8 +27,8 @@
       container_name: database
       restart: always
       volumes:
-      - ./data:/data/db
-      - ./TalkDeskDB.archive:/TalkDeskDB.archive
+        - ./data:/data/db
+        - ./TalkDeskDB.archive:/TalkDeskDB.archive
       ports:
         - 27017:27017
       command: mongorestore --archive=/TalkDeskDB.archive --db TalkDeskDB
