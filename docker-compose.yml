@@ -8,6 +8,10 @@ services:
     command: npm start
     ports:
       - 5000:5000
+    depends_on:
+        - mongodb
+      env_file:
+        - ./be/.env
     # Các cấu hình bổ sung cho dịch vụ backend
 
   frontend:
@@ -20,3 +24,16 @@ services:
     depends_on:
       - backend
     # Các cấu hình bổ sung cho dịch vụ frontend
+    mongodb:
+      image: mongo
+      container_name: database
+      restart: always
+      volumes:
+        #- ./data:/data/db
+        - ./TalkDeskDB.archive:/TalkDeskDB.archive
+      ports:
+        - 27017:27017
+      command: mongorestore --archive=/TalkDeskDB.archive --db TalkDeskDB
+      environment:
+          MONGO_INITDB_ROOT_USERNAME: ThangLuong268
+          MONGO_INITDB_ROOT_PASSWORD: Thang2608
