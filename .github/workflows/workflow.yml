@@ -1,8 +1,7 @@
 name: Talk Desk CI
 on:
   push:
-    branches: [main]
-
+    branches: [dev]
 jobs:
   docker:
     runs-on: ubuntu-latest
@@ -10,42 +9,33 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Login Docker Hub
-        uses: docker/login-action@v1
-        with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-
-      - name: Setup Docker Buildx
-        uses: docker/setup-buildx-action@v1
-        id: buildx
-
-      - name: Cache Docker Image Layers
-        uses: actions/cache@v2
-        with:
-          path: /tmp/.buildx-cache
-          key: ${{ runner.os }}-buildx-${{ github.sha }}
-          restore-keys: |
-            ${{ runner.os }}-buildx-
-
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v2
-        with:
-          context: ./fe_v2
-          file: ./fe_v2/Dockerfile
-          builder: ${{ steps.buildx.outputs.name }}
-          push: true
-          tags: congquyenhuynh111/app3:v1
-          cache-from: type=local,src=/tmp/.buildx-cache
-          cache-to: type=local,dest=/tmp/.buildx-cache
-
       - name: Deploy to server
         uses: appleboy/ssh-action@master
         with:
-          host: 34.197.192.27
-          username: ec2-user
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
           script: |
-            docker-compose down
-            git clone https://github.com/LuongXuanThang20110724/Web_TalkDesk.git
-            docker-compose up -d
+            if [ -d "Web_TalkDesk" ]; then
+              cd Web_TalkDesk
+              git pull origin dev
+              cd ~
+            else
+                git clone -b dev https://github.com/LuongXuanThang20110724/Web_TalkDesk.git
+            fi
+      - name: Run back-end and front-end
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd ~
+            cd Web_TalkDesk
+            sudo docker-compose down
+            sudo docker system prune --all --force --volumes
+            sudo docker-compose up -d
+
+
